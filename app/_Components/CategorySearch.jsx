@@ -29,16 +29,16 @@ export default function CategorySearch() {
                     <Search className='h-4 w-4 mr-2' /> Search
                 </Button>
             </div>
-             {/* Display List of Category */}
+            {/* Display List of Category */}
             <div className='grid grid-cols-3 mt-5 md:grid-cols-4 lg:grid-cols-6'>
-            {categoriesList.map((item, index) => (
-                <div key={index} className='flex flex-col text-center gap-2 
+                {categoriesList.map((item, index) => (
+                    <div key={index} className='flex flex-col text-center gap-2 
                 hover:scale-110 transition-all ease-in-out cursor-pointer
                 items-center p-5 bg-blue-50 m-2 rounded-lg'>
-                    <img src={item?.attributes?.icon?.data?.attributes?.url} alt='Icon' width={40} height={40} />
-                    <label className='text-blue-600 text-sm'>{item?.attributes?.Name}</label>
-                </div>
-            ))}
+                        <img src={item?.attributes?.icon?.data?.attributes?.url} alt='Icon' width={40} height={40} />
+                        <label className='text-blue-600 text-sm'>{item?.attributes?.Name}</label>
+                    </div>
+                ))}
             </div>
         </div>
     );

@@ -29,12 +29,12 @@ function Header() {
     ]
     return (
         <div className='flex items-center justify-between p-4 shadow-sm'>
-
             <div className='flex items-center gap-10'>
-                <ul className='md:flex gap-10 hidden'>
-
+                <div className='flex items-center'>
                     <Image src='/logo.svg' alt='logo' width={40} height={80} className='-mt-2.5' />
-                    <h2 className=' text-primary tracking-wider font-extrabold -ml-10 '>BookMyAppointment</h2>
+                    <h2 className='text-primary tracking-wider font-extrabold ml-2'>BookMyAppointment</h2>
+                </div>
+                <ul className='md:flex gap-10 hidden'>
                     {Menu.map((item, index) => (
                         <li key={item.id} className='hover:text-primary cursor-pointer hover:scale-105 translate-all ease-in-out font-bold'>
                             <Link href={item.path}>
