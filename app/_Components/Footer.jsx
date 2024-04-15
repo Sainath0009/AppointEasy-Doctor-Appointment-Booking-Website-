@@ -1,8 +1,10 @@
 import React from 'react';
+import { Search } from 'lucide-react';
+import Image from 'next/image'
 
 function Footer() {
   return (
-    <div className="relative mt-16 bg-primary">
+    <div className="relative mt-20 bg-primary">
       <svg className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-primary" preserveAspectRatio="none" viewBox="0 0 1440 54">
         <path fill="currentColor" d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"></path>
       </svg>
@@ -10,13 +12,8 @@ function Footer() {
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
-              <svg className="w-8 text-white" viewBox="0 0 24 24" strokeLinejoin="round" strokeWidth="2" strokeLinecap="round" strokeMiterlimit="10" stroke="currentColor" fill="none">
-                <rect x="3" y="1" width="7" height="12"></rect>
-                <rect x="3" y="17" width="7" height="6"></rect>
-                <rect x="14" y="1" width="7" height="6"></rect>
-                <rect x="14" y="11" width="7" height="12"></rect>
-              </svg>
-              <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">Company</span>
+            <Image src='/logo2.svg'  alt='logo' width={40} height={80} className='-mt-2.5 text-white' />
+              <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">BookMyAppointment</span>
             </a>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-white">

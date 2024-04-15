@@ -34,7 +34,7 @@ export default function Home() {
       <CategorySearch />
       {/* Popular Doctors list */}
       <DoctorList doctorList={doctorList} />
-      <Footer/>
+    
     </div>
   );
 }
