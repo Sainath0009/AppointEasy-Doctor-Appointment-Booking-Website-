@@ -1,11 +1,11 @@
 import React from 'react';
 
-function DoctorList({ doctorList }) {
+function DoctorList({ doctorList ,heading='popular Doctors'}) {
   console.log(doctorList); // Log doctorList for debugging
 
   return (
     <div className='mb-10 px-10'>
-      <h2 className='font-bold text-xl'>Popular Doctors</h2>
+      <h2 className='font-bold text-xl'>{heading}</h2>
       <div className='grid grid-cols-2 gap-8 sm:grid-clos-2 mt-4 md:grid-clos-3 lg:grid-cols-4'>
         {!doctorList || (Array.isArray(doctorList) && doctorList.length > 0) ? (
           doctorList.map((doctor, index) => (
