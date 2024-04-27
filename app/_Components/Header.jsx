@@ -1,8 +1,10 @@
+"use client"
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Search } from 'lucide-react';
+import { LoginLink } from '@kinde-oss/kinde-auth-nextjs';
 
 function Header() {
     const Menu = [
@@ -44,7 +46,8 @@ function Header() {
                     ))}
                 </ul>
             </div>
-            <Button>Get Started</Button>
+            <LoginLink>  <Button>Get Started</Button></LoginLink>
+          
         </div>
     )
 }

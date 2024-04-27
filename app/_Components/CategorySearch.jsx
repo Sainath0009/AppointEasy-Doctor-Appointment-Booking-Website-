@@ -34,7 +34,7 @@ export default function CategorySearch() {
             <div className='grid grid-cols-3 mt-5 md:grid-cols-4 lg:grid-cols-6'>
                 {categoriesList.length > 0 ? categoriesList.slice(0, 6).map((item, index) => (
                     <Link href={`/Search/${item?.attributes?.Name}`} key={index}>
-                        <div className='flex flex-col text-center gap-2 hover:scale-110 transition-all ease-in-out cursor-pointer items-center p-5 bg-blue-50 m-2 rounded-lg'>
+                        <div className='flex flex-col text-center gap-2 hover:scale-110 transition-all ease-in-out cursor-pointer items-center p-5 bg-blue-50 m-2 rounded-lg  hover:border-primary hover:shadow-2xl transition-all ease-in-out  '>
                             <img src={item?.attributes?.icon?.data?.attributes?.url} alt='Icon' width={40} height={40} />
                             <label className='text-blue-600 text-sm'>{item?.attributes?.Name}</label>
                         </div>
@@ -42,7 +42,7 @@ export default function CategorySearch() {
                 )) : (
                     [1, 2, 3, 4, 5, 6].map((item, index) => (
                         <div key={index} className='h-[100px] w-[100px] m-2 bg-slate-200 animate-pulse rounded-lg'></div>
-                    ))
+                    ))  
                 )}
             </div>
         </div>
