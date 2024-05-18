@@ -1,4 +1,6 @@
+
 import React from 'react';
+import Link from 'next/link';
 
 function DoctorList({ doctorList ,heading='popular Doctors'}) {
   console.log(doctorList); // Log doctorList for debugging
@@ -23,7 +25,9 @@ function DoctorList({ doctorList ,heading='popular Doctors'}) {
                 <h2 className='text-primary text-sm'> Experience : {doctor.attributes?.Experience}</h2>
                 <h2 className='text-gray-500 text-sm'>{doctor.attributes?.Address}</h2>
               </div>
+              <Link href={'/details/'+doctor?.id} className='w-full'>
               <h2 className='p-2 px-3 border-[1px] border-primary text-primary rounded-full text-center text-[15px] mt-2 cursor-pointer hover:bg-primary hover:text-white'>Book Now</h2>
+              </Link>
             </div>
           ))
         ) : (
@@ -32,7 +36,7 @@ function DoctorList({ doctorList ,heading='popular Doctors'}) {
           ))
         )}
       </div>
-    </div>
+    </div>  
   );
 }
 
