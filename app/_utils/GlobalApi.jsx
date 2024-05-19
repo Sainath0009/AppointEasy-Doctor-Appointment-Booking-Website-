@@ -13,22 +13,17 @@ const getCategory = () => axiosClient.get('categories?populate=*');
 const getDoctorList = () => axiosClient.get('doctors?populate=*');
 
 // Modify getDoctorsByCategory to accept an additional parameter for search query
-const getDoctorsByName = (searchQuery) => {
-    
-    
-    // If search query is provided, include it in the API call
-    if (searchQuery) {
-        apiUrl += '&_q=' + encodeURIComponent(searchQuery);
-    }
-
-    return axiosClient.get('doctors?populate=*');
+const getDoctors = () => {
+    return axios.get(`${API_BASE_URL}/doctors`);
 };
+
+
 
 const getDoctorById = (id) => axiosClient.get('/doctors/' + id + '?populate=*');
 
 module.exports = {
     getCategory,
     getDoctorList,
-    getDoctorsByName,
+    getDoctors,
     getDoctorById
 };

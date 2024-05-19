@@ -2,39 +2,32 @@ import React, { useEffect, useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
-import GlobalApi from '../_utils/GlobalApi';
-import Link from 'next/link';
+import GlobalApi from '../_utils/GlobalApi'; // Ensure this utility handles API requests correctly
 
 export default function CategorySearch() {
-    const [doctorList, setdoctorList] = useState([]);
-    const [CategoryList, setCategoryList] = useState([]);
+    const [doctorList, setDoctorList] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredDoctors, setFilteredDoctors] = useState([]);
 
     useEffect(() => {
-        getCategoryList();
+        getDoctorList();
     }, []);
 
-    const getCategoryList = () => {
-        GlobalApi.getCategory().then(resp => {
-            setCategoryList(resp.data.data);
-        });
+    const getDoctorList = async () => {
+        try {
+            const response = await GlobalApi.getDoctors(); // Assuming you have a GlobalApi method to fetch doctors
+            setDoctorList(response.data.data);
+        } catch (error) {
+            console.error("Error fetching doctors:", error);
+        }
     };
 
     const handleSearch = () => {
-        console.log("Search Query:", searchQuery);
-        console.log("DoctorList:", doctorsList)
-    
-        const filtered = doctorList.filter(item =>
-            item.attributes.Name.toLowerCase().includes(searchQuery.toLowerCase())
+        const filtered = doctorList.filter(doctor =>
+            doctor.attributes.Name.toLowerCase().includes(searchQuery.toLowerCase())
         );
-        console.log("Filtered Doctors:", filtered);
-    
         setFilteredDoctors(filtered);
     };
-    
-    
-
 
     return (
         <div className='mb-10 px-5 items-center flex flex-col gap-2'>
@@ -50,13 +43,13 @@ export default function CategorySearch() {
                 <Button type="submit" onClick={handleSearch}>
                     <Search className='h-4 w-4 mr-2' /> Search
                 </Button>
-
             </div>
             {/* Display the filtered list of doctors */}
             <ul>
                 {filteredDoctors.map(doctor => (
-                    <li key={doctor.id}>{doctor.attributes.Name}</li>
-                    /* Adjust the property name as per your API response */
+                    <li key={doctor.id}>
+                        <Link href={`/doctor/${doctor.id}`}>{doctor.attributes.Name}</Link>
+                    </li>
                 ))}
             </ul>
         </div>
