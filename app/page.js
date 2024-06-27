@@ -8,6 +8,7 @@ import GlobalApi from"./_utils/GlobalApi";
 import { useEffect, useState } from "react";
 import Footer from "./_Components/Footer";
 import Testimonialsblock from "./_Components/Testimonialsblock";
+import Banner from "./_Components/Banner";
 
 export default function Home() {
   const [doctorList, setDoctorList] = useState([]);
@@ -36,6 +37,7 @@ export default function Home() {
       {/* Popular Doctors list */}
       <DoctorList doctorList={doctorList}   />
       <Testimonialsblock/>
+      <Banner/>
 
     
     </div>
