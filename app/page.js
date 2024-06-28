@@ -1,45 +1,47 @@
-"use client";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Hero from "./_Components/Hero";
-import CategorySearch from "./_Components/CategorySearch";
-import DoctorList from "./_Components/DoctorList";
-import GlobalApi from"./_utils/GlobalApi";
+"use client"
+
+
+import Hero from "./_components/Hero";
+import CategorySearch from "./_components/CategorySearch";
+import DoctorList from "./_components/DoctorList";
+import GlobalApi from "./_utils/GlobalApi";
 import { useEffect, useState } from "react";
-import Footer from "./_Components/Footer";
-import Testimonialsblock from "./_Components/Testimonialsblock";
-import Banner from "./_Components/Banner";
+import Counter from "./_components/Counter";
+import Ourservices from "./_components/Ourservices";
+import Banner from "./_components/Banner";
 
 export default function Home() {
-  const [doctorList, setDoctorList] = useState([]);
 
+  const [doctorList, setDoctorList] = useState([]);
   useEffect(() => {
     getDoctorList();
-  }, []);
-
+  }, [])
   const getDoctorList = () => {
-    GlobalApi.getDoctorList()
-      .then(res => {
-        console.log(res.data.data);
-        setDoctorList(res.data.data);
-      })
-      .catch(error => {
-        console.error("Error fetching doctor list:", error);
-      });
-  };
-
+    GlobalApi.getDoctorList().then(resp => {
+      console.log(resp.data.data);
+      setDoctorList(resp.data.data);
+    })
+  }
   return (
     <div>
-      {/* Hero-section */}
+      {/* Hero Section  */}
       <Hero />
-      {/* Search bar + Categories */}
-      <CategorySearch />
-      {/* Popular Doctors list */}
-      <DoctorList doctorList={doctorList}   />
-      <Testimonialsblock/>
-      <Banner/>
+      <Counter />
 
-    
+
+      {/* Search bar + Categories  */}
+      <CategorySearch />
+
+
+      {/* <Servicess/> */}
+
+
+      {/* Popular Doctor List  */}
+      <DoctorList doctorList={doctorList} />
+      {/* <Availabe/> */}
+      <Ourservices />
+      <Banner />
+
     </div>
   );
 }
