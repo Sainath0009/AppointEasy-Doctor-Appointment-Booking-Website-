@@ -16,7 +16,7 @@ import {
     const Menu = [
       { id: 1, name: 'Home', path: '/' },
     //   { id: 2, name: 'Find a Doctor', path: '/' },
-    //   { id: 3, name: 'About',  path:"/" },
+      { id: 3, name: 'About',  path:'/About' },
       { id: 4, name: 'Services', path: '/Services' },
       { id: 5, name: 'Contact Us', path: '/Contact' },
       { id: 6, name: 'Blogs', path: '/Blog' },
