@@ -75,7 +75,7 @@ import {
   
       :
        <LoginLink> <Button>Get Started</Button></LoginLink>
-      }
+      } 
         
     </div>
   )
