@@ -9,7 +9,8 @@ function Footer() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-primary sm:justify-start">
-              <Image src='/logo.png' alt='logo' width={300} height={120} className='-mt-2.5' />
+            <Image src='/logo2.png' alt='logo' width={70} height={80} className='-mt-2.5' />
+            <h2 className=' text-primary text-3xl  font-semibold'>AppointEasy</h2>
             </div>
 
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
@@ -167,7 +168,7 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-700">AppointEsay@.com</span>
+                    <span className="flex-1 text-gray-700">AppointEasy@.com</span>
                   </a>
                 </li>
 
