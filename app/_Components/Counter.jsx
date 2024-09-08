@@ -56,7 +56,7 @@ export default function Counter() {
         <div className="flex flex-col justify-center items-center bg-blue-100 px-4 h-[50px] w-[70%] md:w-[200px] md:h-[150px] rounded-lg justify-self-center cursor-pointer hover:scale-110 transition-all ease-in-out">
           <div className="flex flex-row justify-center items-center">
             <Image src='/stethoscope.svg' alt='logo' width={50} height={50}  />
-            <p className="count-up font-bold text-2xl sm:text-3xl lg:text-5xl leading-9 text-primary ml-2">954</p>
+            <p className="count-up font-bold text-2xl sm:text-3xl lg:text-5xl leading-9 text-primary ml-2">1562</p>
           </div>
           <p className="font-medium text-base sm:text-lg leading-6 mt-3 md:mt-6 text-center">Specialist Doctors</p>
         </div>
