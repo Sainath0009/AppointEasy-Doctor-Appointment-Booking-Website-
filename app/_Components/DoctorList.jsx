@@ -7,7 +7,7 @@ function DoctorList({ doctorList, heading = 'Specialists Doctors' }) {
   const limitedDoctorList = doctorList.slice(0, 4);
 
   return (
-    <div className=' mt-10 mb-20   mr-8 px-8 text-center'>
+    <div className='    pl-10 pr-10  mr-8 px-8 text-center'>
       <h2 className=' font-bold text-2xl  mt-2 items-center'>
         {heading}
       </h2>
@@ -20,7 +20,7 @@ function DoctorList({ doctorList, heading = 'Specialists Doctors' }) {
               alt='doctor'
               width={500}
               height={200}
-              className='h-[200px] w-full object-cover rounded-lg'
+              className='h-[300px] w-[300px] object-cover rounded-lg'
             />
             <div className='mt-3 items-baseline flex flex-col gap-1'>
               <h2 className='text-[10px] bg-blue-100 p-1 rounded-full px-2 text-primary'>{doctor.attributes?.categories.data?.[0]?.attributes?.Name}</h2>
