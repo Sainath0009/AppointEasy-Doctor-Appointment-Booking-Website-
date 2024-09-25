@@ -47,7 +47,6 @@ AppointEasy is a seamless and user-friendly online platform for booking doctor a
       <h2>💡 Usage</h2>
       <p>Navigate to the homepage to search for doctors, view their profiles, and book appointments. After booking, users will receive a confirmation email with all the appointment details.</p>
     </section>
-
     <section id="future-enhancements">
       <h2>🔮 Future Enhancements</h2>
       <ul>
@@ -57,17 +56,14 @@ AppointEasy is a seamless and user-friendly online platform for booking doctor a
         <li>💳 Integrate payment gateways for secure transactions.</li>
       </ul>
     </section>
-
     <section id="contributing">
       <h2>🤝 Contributing</h2>
       <p>We welcome contributions! Feel free to submit pull requests or issues for any feature suggestions or bug fixes.</p>
     </section>
-
     <section id="license">
       <h2>📝 License</h2>
       <p>This project is licensed under the MIT License. Check the <a href="#">LICENSE</a> file for details.</p>
     </section>
-
     <section id="contact">
       <h2>📞 Contact</h2>
       <div class="contact">
@@ -77,7 +73,6 @@ AppointEasy is a seamless and user-friendly online platform for booking doctor a
       </div>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2024 AppointEasy. All rights reserved.</p>
   </footer>
