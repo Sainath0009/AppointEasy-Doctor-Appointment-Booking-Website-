@@ -1,34 +1,85 @@
-## Getting Started
+🏥 AppointEasy - Doctor Appointment Booking System
+AppointEasy is a seamless and user-friendly online platform for booking doctor appointments. Users can search for doctors, view their profiles, and schedule appointments, while doctors can manage their availability and bookings with ease.
 
-First, run the development server:
+🚀 Features
+🔍 Search Doctors: Users can search by doctor name, specialization, or location.
+📝 Doctor Profiles: View detailed profiles, including qualifications, experience, and availability.
+📅 Book Appointments: Schedule appointments with ease and receive instant confirmations.
+📧 Appointment Confirmation: Email notifications are automatically sent to confirm bookings.
+👨‍💼 Admin Panel: Doctors can manage their availability, bookings, and patient details through Strapi CMS.
+🛠️ Tech Stack
+Frontend: React.js
+Backend: Strapi CMS (Node.js)
+Database: SQLite (or compatible with other databases)
+Email Service: Resend.com (for email notifications)
+Hosting: [Add your hosting provider here]
+🏗️ Installation
+📋 Prerequisites
+Node.js (v16+)
+Yarn or npm
+Strapi CMS
+Resend.com account for email notifications (Optional)
+⚙️ Steps to Run the Project
+Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+bash
+Copy code
+git clone https://github.com/Sainath0009/AppointEasy.git
+cd AppointEasy
+Install dependencies for both frontend and backend:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Frontend:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+bash
+Copy code
+cd frontend
+npm install
+# Or use Yarn
+yarn install
+Backend:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+bash
+Copy code
+cd ../backend
+npm install
+# Or use Yarn
+yarn install
+Start the frontend:
 
-## Learn More
+bash
+Copy code
+npm start
+# Or use Yarn
+yarn start
+Run Strapi CMS backend:
 
-To learn more about Next.js, take a look at the following resources:
+bash
+Copy code
+cd backend
+npm run develop
+Configure Email Service (Optional):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Set up Resend.com by adding your API key to environment variables:
+bash
+Copy code
+RESEND_API_KEY=your_api_key_here
+💡 Usage
+🌐 Visit the homepage to search for doctors, view profiles, and book appointments.
+📧 After booking, users receive a confirmation email with their appointment details.
+🔮 Future Enhancements
+⭐ Doctor Reviews & Ratings: Enable patients to rate and review doctors.
+🧑‍💻 Advanced Filters: Add filtering options like consultation types, insurance, and more.
+📱 Mobile App: Develop a mobile version of AppointEasy for a better user experience.
+💳 Payment Integration: Add payment gateways for secure online transactions.
+🤝 Contributing
+We welcome contributions! Feel free to open issues or submit pull requests to enhance features or fix bugs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+📝 License
+This project is licensed under the MIT License. Check the LICENSE file for more details.
 
-## Deploy on Vercel
+📞 Contact
+For any questions or support, you can reach me at:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Name: Sainath Medpalli
+Email: your-email@example.com
+Website: www.appointeasy.com
