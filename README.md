@@ -64,14 +64,7 @@ AppointEasy is a seamless and user-friendly online platform for booking doctor a
       <h2>📝 License</h2>
       <p>This project is licensed under the MIT License. Check the <a href="#">LICENSE</a> file for details.</p>
     </section>
-    <section id="contact">
-      <h2>📞 Contact</h2>
-      <div class="contact">
-        <p><strong>Name:</strong> Sainath Medpalli</p>
-        <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p><strong>Website:</strong> <a href="http://www.appointeasy.com">www.appointeasy.com</a></p>
-      </div>
-    </section>
+   
   </main>
   <footer>
     <p>&copy; 2024 AppointEasy. All rights reserved.</p>
