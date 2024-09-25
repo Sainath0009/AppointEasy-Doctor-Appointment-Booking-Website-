@@ -1,85 +1,83 @@
  <h1>🏥 AppointEasy - Doctor Appointment Booking System</h1>
 AppointEasy is a seamless and user-friendly online platform for booking doctor appointments. Users can search for doctors, view their profiles, and schedule appointments, while doctors can manage their availability and bookings with ease.
+      <h2>🚀 Features</h2>
+      <ul>
+        <li>🔍 Search for doctors by name, specialization, or location.</li>
+        <li>📝 View detailed doctor profiles with qualifications and availability.</li>
+        <li>📅 Easily book appointments and receive email confirmations.</li>
+        <li>📧 Get appointment confirmation emails instantly.</li>
+        <li>👨‍💼 Manage doctor availability, bookings, and patient data via Strapi CMS.</li>
+      </ul>
+<h2>🛠️ Tech Stack</h2>
+        <li><strong>Frontend:</strong> React.js</li>
+        <li><strong>Backend:</strong> Strapi CMS (Node.js)</li>
+        <li><strong>Database:</strong> SQLite (compatible with other databases)</li>
+        <li><strong>Email Service:</strong> Resend.com for email notifications</li>
+        <li><strong>Hosting:</strong> [Add your hosting service]</li>
+      </ul>
+    </section>
+    <section id="installation">
+      <h2>🏗️ Installation</h2>
+      <h3>📋 Prerequisites</h3>
+      <ul>
+        <li>Node.js (v16+)</li>
+        <li>Yarn or npm</li>
+        <li>Strapi CMS</li>
+        <li>Resend.com account (optional for email service)</li>
+      </ul>
+      <h3>⚙️ Steps to Run the Project</h3>
+      <ul>
+        <li>1. Clone the repository:
+          <pre><code>git clone https://github.com/Sainath0009/AppointEasy.git</code></pre>
+        </li>
+        <li>2. Install frontend and backend dependencies:
+          <pre><code>cd frontend && npm install</code></pre>
+          <pre><code>cd ../backend && npm install</code></pre>
+        </li>
+        <li>3. Start the frontend:
+          <pre><code>npm start</code></pre>
+        </li>
+        <li>4. Run Strapi CMS backend:
+          <pre><code>npm run develop</code></pre>
+        </li>
+        <li>5. Set up Resend.com for email notifications (optional).</li>
+      </ul>
+    </section>
+    <section id="usage">
+      <h2>💡 Usage</h2>
+      <p>Navigate to the homepage to search for doctors, view their profiles, and book appointments. After booking, users will receive a confirmation email with all the appointment details.</p>
+    </section>
 
-🚀 Features
-🔍 Search Doctors: Users can search by doctor name, specialization, or location.
-📝 Doctor Profiles: View detailed profiles, including qualifications, experience, and availability.
-📅 Book Appointments: Schedule appointments with ease and receive instant confirmations.
-📧 Appointment Confirmation: Email notifications are automatically sent to confirm bookings.
-👨‍💼 Admin Panel: Doctors can manage their availability, bookings, and patient details through Strapi CMS.
-🛠️ Tech Stack
-Frontend: React.js
-Backend: Strapi CMS (Node.js)
-Database: SQLite (or compatible with other databases)
-Email Service: Resend.com (for email notifications)
-Hosting: [Add your hosting provider here]
-🏗️ Installation
-📋 Prerequisites
-Node.js (v16+)
-Yarn or npm
-Strapi CMS
-Resend.com account for email notifications (Optional)
-⚙️ Steps to Run the Project
-Clone the repository:
+    <section id="future-enhancements">
+      <h2>🔮 Future Enhancements</h2>
+      <ul>
+        <li>⭐ Add doctor reviews and ratings for patients.</li>
+        <li>🧑‍💻 Implement advanced search filters.</li>
+        <li>📱 Create a mobile app version for AppointEasy.</li>
+        <li>💳 Integrate payment gateways for secure transactions.</li>
+      </ul>
+    </section>
 
-bash
-Copy code
-git clone https://github.com/Sainath0009/AppointEasy.git
-cd AppointEasy
-Install dependencies for both frontend and backend:
+    <section id="contributing">
+      <h2>🤝 Contributing</h2>
+      <p>We welcome contributions! Feel free to submit pull requests or issues for any feature suggestions or bug fixes.</p>
+    </section>
 
-Frontend:
+    <section id="license">
+      <h2>📝 License</h2>
+      <p>This project is licensed under the MIT License. Check the <a href="#">LICENSE</a> file for details.</p>
+    </section>
 
-bash
-Copy code
-cd frontend
-npm install
-# Or use Yarn
-yarn install
-Backend:
+    <section id="contact">
+      <h2>📞 Contact</h2>
+      <div class="contact">
+        <p><strong>Name:</strong> Sainath Medpalli</p>
+        <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p><strong>Website:</strong> <a href="http://www.appointeasy.com">www.appointeasy.com</a></p>
+      </div>
+    </section>
+  </main>
 
-bash
-Copy code
-cd ../backend
-npm install
-# Or use Yarn
-yarn install
-Start the frontend:
-
-bash
-Copy code
-npm start
-# Or use Yarn
-yarn start
-Run Strapi CMS backend:
-
-bash
-Copy code
-cd backend
-npm run develop
-Configure Email Service (Optional):
-
-Set up Resend.com by adding your API key to environment variables:
-bash
-Copy code
-RESEND_API_KEY=your_api_key_here
-💡 Usage
-🌐 Visit the homepage to search for doctors, view profiles, and book appointments.
-📧 After booking, users receive a confirmation email with their appointment details.
-🔮 Future Enhancements
-⭐ Doctor Reviews & Ratings: Enable patients to rate and review doctors.
-🧑‍💻 Advanced Filters: Add filtering options like consultation types, insurance, and more.
-📱 Mobile App: Develop a mobile version of AppointEasy for a better user experience.
-💳 Payment Integration: Add payment gateways for secure online transactions.
-🤝 Contributing
-We welcome contributions! Feel free to open issues or submit pull requests to enhance features or fix bugs.
-
-📝 License
-This project is licensed under the MIT License. Check the LICENSE file for more details.
-
-📞 Contact
-For any questions or support, you can reach me at:
-
-Name: Sainath Medpalli
-Email: your-email@example.com
-Website: www.appointeasy.com
+  <footer>
+    <p>&copy; 2024 AppointEasy. All rights reserved.</p>
+  </footer>
