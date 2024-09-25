@@ -13,7 +13,7 @@ AppointEasy is a seamless and user-friendly online platform for booking doctor a
         <li><strong>Backend:</strong> Strapi CMS (Node.js)</li>
         <li><strong>Database:</strong> SQLite (compatible with other databases)</li>
         <li><strong>Email Service:</strong> Resend.com for email notifications</li>
-        <li><strong>Hosting:</strong> [Add your hosting service]</li>
+<!--         <li><strong>Hosting:</strong> [Add your hosting service]</li> -->
       </ul>
     </section>
     <section id="installation">
