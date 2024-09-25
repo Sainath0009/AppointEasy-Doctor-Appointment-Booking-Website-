@@ -1,4 +1,4 @@
-🏥 AppointEasy - Doctor Appointment Booking System
+ <h1>🏥 AppointEasy - Doctor Appointment Booking System</h1>
 AppointEasy is a seamless and user-friendly online platform for booking doctor appointments. Users can search for doctors, view their profiles, and schedule appointments, while doctors can manage their availability and bookings with ease.
 
 🚀 Features
