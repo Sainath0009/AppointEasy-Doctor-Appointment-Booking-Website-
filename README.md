@@ -60,9 +60,8 @@ AppointEasy is a seamless and user-friendly online platform for booking doctor a
       <h2>🤝 Contributing</h2>
       <p>We welcome contributions! Feel free to submit pull requests or issues for any feature suggestions or bug fixes.</p>
     </section>
-    <section id="license">
-      <h2>📝 License</h2>
-      <p>This project is licensed under the MIT License. Check the <a href="#">LICENSE</a> file for details.</p>
+  
+      
     </section>
    
   </main>
