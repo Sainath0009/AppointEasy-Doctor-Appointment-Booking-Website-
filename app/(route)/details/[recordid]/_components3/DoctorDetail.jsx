@@ -2,10 +2,31 @@ import { Button } from '@/components/ui/button'
 import { GraduationCap, MapPin } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
-// import BookAppointment from './BookAppointment'
+import BookAppointment from './BookAppointment'
 
 function DoctorDetail({doctor}) {
-   
+    const socialMediaList=[
+        {
+            id:1,
+            icon:'/youtube.png',
+            url:''
+        },
+        {
+            id:2,
+            icon:'/linkedin.png',
+            url:''
+        },
+        {
+            id:3,
+            icon:'/twitter.png',
+            url:''
+        },
+        {
+            id:4,
+            icon:'/facebook.png',
+            url:''
+        }
+    ]
   return (
     <>
     <div className='grid grid-cols-1 md:grid-cols-3 border-[1px] p-5 mt-5 rounded-lg'>
@@ -40,7 +61,7 @@ function DoctorDetail({doctor}) {
                         />
                     ))}
                 </div>
-                {/* <BookAppointment doctor={doctor} /> */}
+                <BookAppointment doctor={doctor} />
           </div>
 
           {/* About Doctor  */}
