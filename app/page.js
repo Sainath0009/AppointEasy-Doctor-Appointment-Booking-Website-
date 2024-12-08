@@ -1,14 +1,12 @@
 "use client"
-
-
-import Hero from "./_components/Hero";
-import CategorySearch from "./_components/CategorySearch";
-import DoctorList from "./_components/DoctorList";
+import CategorySearch from "./_Components/CategorySearch";
+import DoctorList from "./_Components/DoctorList";
 import GlobalApi from "./_utils/GlobalApi";
 import { useEffect, useState } from "react";
-import Counter from "./_components/Counter";
-import Ourservices from "./_components/Ourservices";
-import Banner from "./_components/Banner";
+import Counter from "./_Components/Counter";
+import Ourservices from "./_Components/Ourservices";
+import Banner from "./_Components/Banner";
+import Hero from "./_Components/Hero";
 
 export default function Home() {
 
