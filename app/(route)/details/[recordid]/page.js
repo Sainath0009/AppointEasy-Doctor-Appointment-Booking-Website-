@@ -16,9 +16,9 @@ function Details({ params }) {
   const getDoctorById = () => { // Accept recordId as a parameter
     GlobalApi.getDoctorById(params.recordId).then(resp => {
       setDoctor(resp.data.data); 
-   })//.catch(error => {
-    //   console.error('Error fetching doctor details:', error);
-    // });
+   }).catch(error => {
+    console.error('Error fetching doctor details:', error);
+     });
   }
 
   return (
